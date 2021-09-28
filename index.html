@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btp/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Check Point II</title>
+</head>
+
+<body class="container-fluid">
+    
+    <header class="row">
+        <!-- Navibar -->
+        <nav class="navbar navbar-dark justify-content-between">
+            <h1 style="color:aliceblue;">Revenda Apple</h1>
+            <!--  Button Collapse -->
+            <div class="d-md-none">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Menus lista md -->
+            <div class="d-none d-md-block">
+                <ul class="nav">
+                    <li><a href="#" class="nav-link text-warning fw-bold">INÍCIO</a></li>
+                    <li><a href="reclamacoes.html" class="nav-link text-warning fw-bold">FEEDBACK</a></li>
+                    <li><a href="contato.html" class="nav-link text-warning fw-bold">CONTATO</a></li>
+                </ul>
+            </div>
+            <!-- img store -->
+            <div>
+                <a href="https://www.apple.com/" target="_blank"><img src="imgs/apple.jpeg" class="img-fluid" width="80" height="80" alt=""></a>
+            </div>
+            <!-- Button trigger modal form Publicar-->
+            <div>
+                <button type="button" class="btn btn-outline-warning fw-bold" data-bs-toggle="modal"
+                 style="color: aliceblue" data-bs-target=#exampleModal>PUBLICAR</button>
+            </div>
+            <!-- Modal form -->
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- Titulo modal -->
+                            <h5 class="modal-title" id="exampleModalLabel">Cadastre seu Produto !</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Body modal -->
+                        <div class="modal-body">
+                            <!-- Form modal -->
+                            <form>
+                                <!-- TITULO DO PRODUTO -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" maxlength="39" class="form-control"
+                                        placeholder="Titulo do Produto" required>
+                                    <label>Título descritivo</label>
+                                </div>
+                                <!-- URL PARA IMAGEM -->
+                                <div class="form-floating mb-3">
+                                    <input type="url" class="form-control"
+                                        placeholder="URL da imagem https://example.com/picture.jpg" required>
+                                    <label>URL da imagem https://example.com/picture.jpg</label>
+                                </div>
+                                <!-- VALOR de DE: -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="0" max="99999" step=".01" class="form-control"
+                                        placeholder="De: R$" required>
+                                    <label>De: R$</label>
+                                </div>
+                                <!-- Valor POR: -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="0" max="99999" step=".01" class="form-control"
+                                        placeholder="Por: R$" required>
+                                    <label>Por: R$</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <!-- NUMERO DE PARCELAS -->
+                                    <input type="number" min="2" max="12" class="form-control" placeholder="Nº Parcelas"
+                                        required>
+                                    <label>Nº Parcelas</label>
+                                </div>
+                                <!-- Avaliação -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="1" max="5" class="form-control"
+                                        placeholder="Avaliação do produto de 1-5" required>
+                                    <label>Avaliação do produto de 1-5</label>
+                                </div>
+                                <!-- button modal -->
+                                <div class="modal-footer">
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Collapse navebar menus -->
+        <div class="navbar-collapse collapse border bg-primary d-md-none" id="navcollapse">
+            <div>
+                <ul class="nav justify-content-center my-3">
+                    <li><a href="#" class="nav-link text-warning fw-bold">INÍCIO</a></li>
+                    <li><a href="reclamacoes.html" class="nav-link text-warning fw-bold">FEEDBACK</a></li>
+                    <li><a href="contato.html" class="nav-link text-warning fw-bold">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Container para publicar os cards -->
+    <main class="row row-cols-2 row-cols-md-5 mt-3 g-3">
+        <!-- Card Exemplo -->
+        <div class="col">
+            <a href="#" class="text-decoration-none">
+                <div class="card h-100 text-center">
+                    <div class="cardImg">
+                        <img src="imgs/iphone-12-pro-family-hero (1).jpeg" class="card-img-top p-2">
+                    </div>
+                    <div>
+                        <h5>Iphone 12 Pro</h5>
+                    </div>
+                    <div class="stars mb-2">
+                        <img src="imgs/star.png" class="img-fluid" alt="">
+                        <img src="imgs/star.png" class="img-fluid" alt="">
+                        <img src="imgs/star.png" class="img-fluid" alt="">
+                        <img src="imgs/star.png" class="img-fluid" alt="">
+                        <img src="imgs/star.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <div class="de">De: R$ 9.999,00</div>
+                        <div class="por">Por: R$ 7.999,00</div>
+                        <div class="parc">10x de R$ 799,00 s/ juros</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Teste horizontal -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="cardImg">
+                    <img src="imgs/airpods-max-hero-select-202011.jpeg" class="card-img-top p-2">
+                </div>
+                <div>
+                    <h5>Airpods Max</h5>
+                </div>
+                <div class="stars mb-2">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <div class="de">De: R$ 6.899,00</div>
+                    <div class="por">Por: R$ 5.000,00</div>
+                    <div class="parc">10x de R$ 500,00 s/ juros</div>
+                </div>
+            </div>
+        </div>
+        <!-- Teste vertical -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="cardImg">
+                    <img src="imgs/appleWatch.jpg" alt="">
+                </div>
+                <div>
+                    <h5>Apple Watch 6</h5>
+                </div>
+                <div class="stars mb-2">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <div class="de">De: R$ 2.700,0</div>
+                    <div class="por">Por: R$ 1.500,00</div>
+                    <div class="parc">10x de R$ 150,00 s/ juros</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/btp/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btp/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reclamacoes.css">
+    <title>Feedback</title>
+</head>
+
+<body class="container-fluid">
+    <header class="row">
+        <!-- Navibar -->
+        <nav class="navbar navbar-dark bg-primary justify-content-between">
+            <!--  Button Collapse -->
+            <div class="d-md-none">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Menus lista md -->
+            <div class="d-none d-md-block">
+                <ul class="nav">
+                    <li><a href="index.html" class="nav-link text-warning fw-bold">INÍCIO</a></li>
+                    <li><a href="#" class="nav-link text-warning fw-bold">FEEDBACK</a></li>
+                    <li><a href="contato.html" class="nav-link text-warning fw-bold">CONTATO</a></li>
+                </ul>
+            </div>
+            <!-- img store -->
+            <div>
+                <a href="https://www.apple.com/" target="_blank"><img src="imgs/apple.jpeg" class="img-fluid" width="80" height="80" alt=""></a>
+            </div>
+            <div>
+            </div>
+        </nav>
+        <!-- Collapse navebar menus -->
+        <div class="navbar-collapse collapse border bg-primary d-md-none" id="navcollapse">
+            <div>
+                <ul class="nav justify-content-center my-3">
+                    <li><a href="index.html" class="nav-link text-warning fw-bold">INÍCIO</a></li>
+                    <li><a href="#" class="nav-link text-warning fw-bold">FEEDBACK</a></li>
+                    <li><a href="contato.html" class="nav-link text-warning fw-bold">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- FEEDBACK cards -->
+    <main class="row row-cols-md-2 mt-3 justify-content-center">
+    </main>
+    <div class="all">
+		<h1 class="title">Como foi a sua compra?</h1>
+		<div class="center-fixed">	
+			<form id="frmCadastro">
+				<label for="txtNome">Nome</label><br>
+				<input type="text" id="txtNome" placeholder="Nome"><br>
+				
+				<label for="dtpDataCompra">Data da Compra</label><br>
+				<input type="date" id="dtpDataCompra" value="2020-01-01" required>
+				
+				<fieldset>
+					<legend>Estado</legend>
+					<input type="radio" name="estado" value="happy" id="rdoFeliz" checked>
+					<label for="rdoFeliz">Feliz</label><br>		
+					
+					<input type="radio" name="estado" value="sad" id="rdoTriste">
+					<label for="rdoTriste">Triste</label>
+				</fieldset>
+				
+				<input type="submit" name="" id="btnCadastrarSalvar" value="Cadastrar">
+			</form>
+		</div>
+		<table>
+			<caption><h2></h2></caption>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Compra</th>
+					<th>Estado</th>
+					<th>Ultima Atualização</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyResultados"></tbody>
+			<tfoot></tfoot>
+		</table>
+	</div>
+    <script src="js/btp/bootstrap.bundle.min.js"></script>
+    <script src="js/reclamacoes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+}
+
+.navbar{
+    background-color: black !important;
+}
+
+.nav-link{
+    color: aliceblue !important;
+}
+
+.nav-link:hover {
+    border-radius: 3px;
+    box-shadow: rgb(235, 233, 229) 0px 0px 1px 1px ;
+}
+.cardImg {
+    min-height: 10em;
+}
+.cardImg img {
+    height: 10em;
+    object-fit: contain;
+}
+.stars img{
+    transition: 0.25s ease-in-out;
+}
+.stars img:hover {
+    transform: scale(1.25);
+}
+.de {
+    color: #666;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: 0.25s ease-in-out;
+}
+.de:hover {
+    color: red;
+}
+.por {
+    color:blue;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.25s ease-in-out;
+}
+.por:hover{
+    transform: scale(1.05);
+}
+.parc {
+    color: #707070;
+    font-size: 0.74rem;
+    line-height: 1rem;
+}
